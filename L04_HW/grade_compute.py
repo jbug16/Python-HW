@@ -76,7 +76,7 @@ def removeLowestGrade(grades):
     grades.sort()
 
     # Print lowest grade
-    print(f"The lowest grade of {grades[0]} will be dropped")
+    print(f"The lowest grade of {numberToGrade(grades[0])} will be dropped")
 
     # Remove first grade (lowest)
     del grades[0]
@@ -88,18 +88,28 @@ def gradeAverage(grades):
     return sum(grades) / len(grades)
 
 # Convert number grade to letter
-def numberToGrade(average):
-    if (average == 4.0):
-        letter_average = "A+"
+def numberToGrade(grade):
+    if grade >= 4.0:
+        letter = "A+"
+    elif grade >= 3.7:
+        letter = "A"
+    elif grade >= 3.3:
+        letter = "A-"
+    elif grade >= 3.0:
+        letter = "B+"
+    elif grade >= 2.7:
+        letter = "B"
+    elif grade >= 2.3:
+        letter = "B-"
+    elif grade >= 2.0:
+        letter = "C+"
+    elif grade >= 1.7:
+        letter = "C"
+    elif grade >= 1.3:
+        letter = "C-"
+    elif grade >= 1.0:
+        letter = "D"
+    else:
+        letter = "F"
 
-    return letter_average
-
-letter_grades = collectGrades()
-number_grades = gradeToNumber(letter_grades)
-
-print(f"You entered the grades {letter_grades[0]}, {letter_grades[1]}, {letter_grades[2]}, {letter_grades[3]}")
-
-new_grades = removeLowestGrade(number_grades)
-average = gradeAverage(new_grades)
-
-print("The average grade is " + str(average))
+    return letter
