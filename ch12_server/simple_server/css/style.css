@@ -1,0 +1,130 @@
+* {
+    font-family: LiberationSerifRegular, TimesNewRoman, serif;
+}
+
+.bg-lightblue {
+	background-color: #Fffbff;
+}
+
+
+button {
+    font-size: 16px;
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+	background-color: #C59FDE;
+}
+
+nav, h1, .job_offer, .header {
+    text-align:center;
+}
+
+.nav-link, .navbar-brand {
+	color: black;
+	font-size: 25px;
+}
+
+
+.image {
+  flex-basis: 30%;
+}
+
+.image2 {
+    flex-basis: 30%;
+    order: 2;
+    max-width: 500px;
+}
+
+.title {
+  font-size: 88px;
+  color: #63A5D3;
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.text2 {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.job_offer {
+    font-size: 18px;
+}
+
+.header1 {
+    font-size: 35px;
+    color: #C59FDE;
+}
+
+.header2 {
+  font-size: 35px;
+  color: #DAB5D2;
+}
+
+.header3 {
+  font-size: 35px;
+  color: #63A5D3;
+}
+
+.featurette-divider {
+  color:#63A5D3;
+}
+
+
+.button1{
+  background-color: #C59FDE; 
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 27px;
+  transition-duration: 0.4s;
+  }
+  
+  .button1:hover {
+    background-color: #63A5D3;
+    color: white;
+  }
+
+  .button2{
+    background-color: #E1BDD9; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 27px;
+    transition-duration: 0.4s;
+    }
+    
+    .button2:hover {
+      background-color: #63A5D3;
+      color: white;
+    }
+
+    .button3{
+      background-color: #63A5D3; 
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 27px;
+      transition-duration: 0.4s;
+      }
+      
+      .button3:hover {
+        background-color: #C59FDE;
+        color: white;
+      }
